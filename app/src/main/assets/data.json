@@ -1,0 +1,131 @@
+{
+  "dishes": [
+    {
+      "id": "tacos_pastor",
+      "name": "Tacos al pastor",
+      "image": "pl_tacos_pastor",
+      "summary": "Carne adobada en trompo, servida en tortilla con piña, cilantro y cebolla.",
+      "origin": "CDMX, mediados del siglo XX. Influencia del shawarma libanés."
+    },
+    {
+      "id": "chile_nogada",
+      "name": "Chile en nogada",
+      "image": "pl_chile_en_nogada",
+      "summary": "Chile poblano relleno, bañado con salsa de nogada y granada.",
+      "origin": "Puebla, 1821. Relacionado con las celebraciones de la independencia."
+    }
+
+  ],
+  "subpreps": [
+    {
+      "id": "pastor_desc",
+      "dishId": "tacos_pastor",
+      "name": "Descripción y origen",
+      "description": "Los tacos al pastor nacen en la Ciudad de México a mediados del siglo XX. Inmigrantes libaneses adaptaron el shawarma a ingredientes locales y carne de cerdo cocida en trompo.",
+      "tips": ["Observa el corte delgado tipo trompo", "La piña se agrega al final"],
+      "kind": "info",
+      "order": 1
+    },
+
+    {
+      "id": "tortilla_sofrita",
+      "dishId": "tacos_pastor",
+      "name": "Tortilla sofrita",
+      "description": "Tostar o sofreír ligeramente la tortilla para textura y sabor.",
+      "tips": ["Usa poco aceite", "Vuelta rápida para no endurecer"],
+      "kind": "prep",
+      "order": 2,
+      "mediaUrl": "capa2_tortilla"
+    },
+    {
+      "id": "carne_pastor",
+      "dishId": "tacos_pastor",
+      "name": "Carne al pastor",
+      "description": "Carne de cerdo marinada con chiles y achiote, cocida en trompo o plancha.",
+      "tips": ["Reposo mínimo 4 horas del marinado", "Rebanadas delgadas para dorado parejo"],
+      "kind": "prep",
+      "order": 3,
+      "mediaUrl": "capa2_carne_pastor"
+    },
+    {
+      "id": "salsa_pastor",
+      "dishId": "tacos_pastor",
+      "name": "Salsa roja",
+      "description": "Salsa a base de jitomate y chiles para acompañar.",
+      "tips": ["Ajusta picor con el chile de árbol", "Licúa y rectifica sal"],
+      "kind": "prep",
+      "order": 4,
+      "mediaUrl": "capa2_salsa"
+    },
+    {
+      "id": "cn_historia",
+      "dishId": "chile_nogada",
+      "name": "Historia",
+      "description": "Creado en 1821 por monjas agustinas del convento de Santa Mónica en Puebla, asociado a la visita de Agustín de Iturbide tras los Tratados de Córdoba.",
+      "tips": ["Busca versiones tradicionales en temporada", "El colorido refleja la bandera"],
+      "kind": "info",
+      "order": 1
+    },
+    {
+      "id": "cn_chile_tatemado",
+      "dishId": "chile_nogada",
+      "name": "Chile tatemado",
+      "description": "Asar, sudar y pelar el chile poblano conservando su forma.",
+      "tips": ["Sudar en bolsa para pelar fácil", "Evitar agua directa para no lavar sabor"],
+      "kind": "prep",
+      "order": 2,
+      "mediaUrl": "capa2_chile"
+    },
+    {
+      "id": "cn_relleno",
+      "dishId": "chile_nogada",
+      "name": "Relleno",
+      "description": "Salteado de carne con frutas y especias; balance dulce-salado.",
+      "tips": ["Picar todo de tamaño similar", "Rectificar sal al final"],
+      "kind": "prep",
+      "order": 3,
+      "mediaUrl": "capa2_relleno"
+
+    },
+    {
+      "id": "cn_nogada",
+      "dishId": "chile_nogada",
+      "name": "Nogada",
+      "description": "Salsa cremosa de nuez de castilla con lácteos y sazón.",
+      "tips": ["Pelar bien la nuez para evitar amargor", "Usar leche fría para textura suave"],
+      "kind": "prep",
+      "order": 4,
+      "mediaUrl": "capa2_nogada"
+    }
+  ],
+  "ingredients": [
+    { "id": "tp_tort_1", "subprepId": "tortilla_sofrita", "name": "Tortilla de maíz", "qty": "4 pzs", "note": "Sella con poca grasa", "image": "capa2_tortilla" },
+
+    { "id": "tp_carne_1", "subprepId": "carne_pastor", "name": "Carne de cerdo", "qty": "500 g", "image": "capa3_carne_cerdo" },
+    { "id": "tp_carne_2", "subprepId": "carne_pastor", "name": "Achiote", "qty": "60 g", "image": "capa3_achiote" },
+    { "id": "tp_carne_3", "subprepId": "carne_pastor", "name": "Chile guajillo", "qty": "4 pzs", "image": "capa3_chile_guajillo" },
+    { "id": "tp_carne_4", "subprepId": "carne_pastor", "name": "Chile ancho", "qty": "2 pzs", "image": "capa3_chile_ancho" },
+    { "id": "tp_carne_5", "subprepId": "carne_pastor", "name": "Naranja (jugo)", "qty": "1 pza", "image": "capa3_naranja" },
+
+    { "id": "tp_salsa_1", "subprepId": "salsa_pastor", "name": "Jitomate", "qty": "3 pzs", "image": "capa3_salsa_jitomate" },
+    { "id": "tp_salsa_2", "subprepId": "salsa_pastor", "name": "Cebolla", "qty": "1/4 pza", "image": "capa3_salsa_cebolla" },
+    { "id": "tp_salsa_3", "subprepId": "salsa_pastor", "name": "Ajo", "qty": "1 diente", "image": "capa3_salsa_ajo" },
+    { "id": "tp_salsa_4", "subprepId": "salsa_pastor", "name": "Chile de árbol", "qty": "2 pzs", "image": "capa3_salsa_chile_arbol" },
+
+    { "id": "cn_chile_1", "subprepId": "cn_chile_tatemado", "name": "Chile poblano", "qty": "2 pzs", "image": "capa2_chile" },
+
+    { "id": "cn_rel_1", "subprepId": "cn_relleno", "name": "Carne molida de res", "qty": "400 g", "image": "capa3_carne_molida" },
+    { "id": "cn_rel_2", "subprepId": "cn_relleno", "name": "Manzana", "qty": "1 pza", "image": "manzana" },
+    { "id": "cn_rel_3", "subprepId": "cn_relleno", "name": "Almendras", "qty": "50 g", "image": "capa3_almendras" },
+    { "id": "cn_rel_4", "subprepId": "cn_relleno", "name": "Ajo", "qty": "1 diente", "image": "capa3_ajo" },
+    { "id": "cn_rel_5", "subprepId": "cn_relleno", "name": "Cebolla", "qty": "1/4 pza", "image": "capa3_cebolla" },
+    { "id": "cn_rel_6", "subprepId": "cn_relleno", "name": "Jitomate", "qty": "2 pzs", "image": "capa3_jitomate" },
+    { "id": "cn_rel_7", "subprepId": "cn_relleno", "name": "Pimienta y sal", "qty": "al gusto", "image": "capa3_sal_pimienta" },
+
+    { "id": "cn_nog_1", "subprepId": "cn_nogada", "name": "Nuez de castilla", "qty": "150 g", "image": "capa3_nuez_castilla" },
+    { "id": "cn_nog_2", "subprepId": "cn_nogada", "name": "Leche", "qty": "1/2 taza", "image": "capa3_leche" },
+    { "id": "cn_nog_3", "subprepId": "cn_nogada", "name": "Crema", "qty": "1/2 taza", "image": "capa3_crema" },
+    { "id": "cn_nog_4", "subprepId": "cn_nogada", "name": "Queso fresco", "qty": "100 g", "image": "capa3_queso" }
+  ]
+
+}
